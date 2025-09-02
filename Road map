@@ -1,0 +1,32 @@
+package Com.Sample;
+public class RoadMap {	
+    public static void main(String[] args) {
+	    //TODO Auto-generated method
+	    //Non-Primitive DataType
+        String studentName = "Abhigna";
+        String[] roadMap = {
+        		" 1st year : Master program Fundamentals",
+        		" 2nd year : Explore on AI,Data Sciences or Cyber Security"	,
+        		" 3rd year : Internship in Tech Company ",
+        		" 4th year : Innovative Projects as your final project",
+        		" After B.tech : Job in Tech Company or Higher Studies (MBA,MS,M.tech or group jobs"        		
+        };
+        System.out.println("++++++++++++++++++++++++++++++");
+        System.out.println("     CAREER ROAD MAP ");
+        System.out.println("++++++++++++++++++++++++++++++");
+        System.out.println("Student Name: "+ studentName);        
+        for(String step: roadMap) {
+        	System.out.println("=>"+step);
+        }
+}
+}
+OUTPUT:
+++++++++++++++++++++++++++++++
+     CAREER ROAD MAP 
+++++++++++++++++++++++++++++++
+Student Name: Abhigna
+=> 1st year : Master program Fundamentals
+=> 2nd year : Explore on AI,Data Sciences or Cyber Security
+=> 3rd year : Internship in Tech Company 
+=> 4th year : Innovative Projects as your final project
+=> After B.tech : Job in Tech Company or Higher Studies (MBA,MS,M.tech or group jobs
