@@ -28,11 +28,11 @@ public class ElectricityBill {
 		}
 		System.out.println("The charge is: " +bill);
 	}
-
+}
 
 OUTPUT:
 enter the units:
 400
 The charge is: 1250
 
-}
+
