@@ -1,0 +1,51 @@
+package Com.Sample;
+import java.util.Scanner;
+public class array_multiply {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int[][] a1= new int[2][2];
+		int [][] b1=new int[2][2];
+		System.out.println("enter array elements :");
+		for(int i=0;i<2;i++) {
+			for(int j=0;j<2;j++) {
+				a1[i][j]=sc.nextInt();
+			}
+		}
+		for(int i=0;i<2;i++) {
+			for(int j=0;j<2;j++) {
+				b1[i][j]=sc.nextInt();
+			}
+		}
+		int[][] result=new int[2][2];
+		for (int i = 0; i < 2; i++) {        // row of first
+            for (int j = 0; j < 2; j++) {    // column of second
+                for (int k = 0; k < 2; k++) { // sum of products
+                    result[i][j] += a1[i][k] * b1[k][j];
+                }
+            }
+        }
+        System.out.println("Multiplication of matrices:");
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
+                System.out.print(result[i][j] + " ");
+            }
+            System.out.println();
+        }
+	}
+}
+
+
+
+OUTPUT:
+enter array elements :
+1
+2
+3
+4
+5
+6
+7
+8
+Multiplication of matrices:
+19 22 
+43 50 
